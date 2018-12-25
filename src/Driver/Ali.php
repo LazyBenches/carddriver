@@ -39,6 +39,15 @@ class Ali implements BankCardDriver
             if ($statusCode != 200) {
                 throw new \Exception($data['showapi_res_body']['msg'], $statusCode);
             }
+			if(!$data['showapi_res_body']){
+                throw new \Exception('调用接口失败', $statusCode);
+            }
+            if(!$data['showapi_res_body']['belong']){
+                throw new \Exception('调用接口数据失败', $statusCode);
+            }
+            if($data['showapi_res_body']['code']!=0 || $data['showapi_res_body']['ret_code']!=0){
+                throw new \Exception($data['showapi_res_body']['msg']);
+            }
             return [
                 'code' => $statusCode,
                 'msg' => 'success',
