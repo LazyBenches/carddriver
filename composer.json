@@ -1,15 +1,15 @@
 {
-    "name": "lazybench/carddrvier",
-    "description": "bank card driver",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "LazyBench",
-            "email": "jwy226@qq.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {
-        "php": ">=7.0.0"
+  "name": "lazybench/carddrvier",
+  "description": "bank card driver",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "LazyBench",
+      "email": "jwy226@qq.com"
     }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.0.0"
+  }
 }
