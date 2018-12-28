@@ -1,0 +1,11 @@
+{
+    "name": "lazybench/carddrvier",
+    "description": "bank card driver",
+    "authors": [
+        {
+            "name": "LazyBench",
+            "email": "jwy226@qq.com"
+        }
+    ],
+    "require": {}
+}
